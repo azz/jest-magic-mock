@@ -1,0 +1,24 @@
+{
+  "name": "jest-magic-mock",
+  "version": "1.0.0",
+  "main": "dist",
+  "author": "Lucas Azzola <lucas@azzola.dev>",
+  "license": "MIT",
+  "devDependencies": {
+    "@azz/prettier-config": "^1.0.0",
+    "@babel/cli": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-jest": "^22.6.4",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "prettier": "1.18.2"
+  },
+  "scripts": {
+    "build": "babel src -d dist --ignore '**/__tests__'",
+    "test": "jest",
+    "lint": "eslint . --ignore-path=.gitignore"
+  },
+  "prettier": "@azz/prettier-config"
+}
